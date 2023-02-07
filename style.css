@@ -1,44 +1,36 @@
 nav{
-    background-color: black;
+    background-color:black;
     color: white;
-    /*position: fixed;*/
+    text-align: center;
+    min-height: 50%;
 }
 
-nav i{
+i{
     color: white;
-    font-size: 2vw;
-   }
+    font-size: 3vw;
+}
 
-nav .col-4, .col-6{
-    align-self: center;
-}
-nav .col-4{
-    padding-left: 20vw;
-}
- 
 .card{
     margin: 10px 5px 10px;
 }
-.card .fotoperfil img{
-    border-radius: 1000px;
-    height: 50vh;
-    margin-top: -200px;
-    margin-left: 30px;
-}
 
-.card-body {
+.tabla{
+    max-width:25vw;
+    background-color: white;
     text-align: center;
+}
+#perfil img{
+    border-radius: 200px;
+    max-width: 70%;
+    height: auto;
+    margin-top: -150px;
+    
 }
 
 .titulos{
     padding-left: 25px;
 }
 
-/*bordes cuadro educacion 
-.logo, .info{
-   border: 2px red solid;
-}
-*/
 .pequeño{
     color: grey;
 }
@@ -47,24 +39,23 @@ nav .col-4{
     font-weight: bold;
 }
 
-.logo{
-    margin-left: 50px;
-}
-
-.info{
-    margin-left: -300px;
-}
-
 .barras p{
     text-align: center;
 }
 
 .barras{
-    margin-left: 25px;
-    margin-right: 25px;
+    margin-left: 100px;
+    margin-right: 100px;
     margin-bottom: 25px;
 }
 
+table{
+    table-layout: auto;
+}
+#educacion{
+    width: fit-content;
+   
+}
 
     
 
