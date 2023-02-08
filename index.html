@@ -15,25 +15,22 @@
     
     <title>Portfolio</title>
 </head>
-<body class="container-fluid">
-    
-    <nav>
-    <table class="table-sm" class="encabezado">
-        <thead>
-            <tr>
-                <th scope="col"><a href="https://argentinaprograma.inti.gob.ar/"><img class="arg" src="/images/arg programa.jpg" alt="Logo argentina programa"></a></th>
-                <th scope="col"><h4>Lorena Zamarian</h4></th> 
-                <th scope="col1" class="face"><a href="https://www.facebook.com/lore.zama/"><i class="fa-brands fa-facebook" ></i></a></th>
-                <th scope="col1" class="insta"><a href="https://www.instagram.com/lorezamas/"><i class="fa-brands fa-instagram"></i></a></th>
-                <th scope="col1" class="git"><a href="https://github.com/LorenaZamarian"><i class="fa-brands fa-github"></i></a></th>
-                <th scope="col1" class="linkedin"><a href="https://www.linkedin.com/in/lorena-zamarian-aa862b1b3/"><i class="fa-brands fa-linkedin"></i></a></th> 
-                
-            </tr>
-        </thead>    
-    </table>
-    </nav>
 
-     
+<body>
+    <nav>
+        <div class="redes">
+            <a href="https://argentinaprograma.inti.gob.ar/" class="arg"><img class="arg" src="/images/arg programa.jpg" alt="Logo argentina programa"></a>
+            <span class="nombre">Lorena Zamarian</span>
+            <span class="ico">
+                <a href="https://www.facebook.com/lore.zama/"><i class="fa-brands fa-facebook" ></i></a>
+                <a href="https://www.instagram.com/lorezamas/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://github.com/LorenaZamarian"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/lorena-zamarian-aa862b1b3/"><i class="fa-brands fa-linkedin"></i></a>
+            </span>
+        </div>
+    </nav>
+   
+    
     <div class="card">
         <div class="banner">
             <img src="/images/lenguaje-programacion.jpg" class="card-img-top" alt="imagen ilustrativa con texto en codigo">
@@ -68,17 +65,17 @@
     <!--segunda card-->
     <div class="card">
         <h3 class="titulos"> Acerca de </h3>
-        <p style="padding-left: 15px;">Profesora de Inglés, inicializandome en el mundo de la programación con conocimientos en http, css, javascript y python, entre otras</p>
+        <p style="padding-left: 15px;">Profesora de Inglés, inicializandome en el mundo de la programación con conocimientos en html, css, javascript y python, entre otras</p>
     </div>
 
 
 <div class="card">
     <h3 class="titulos"> Educación </h3>
     
-    <table class="table" id="educacion">
+    <table class="table table-borderless" >
         <thead>
              <tr class="text-center">
-                <th scope="col" ><a href="https://ens9001-infd.mendoza.edu.ar/sitio/"><img src="/images/iesdyt.png" alt="logo instituto de formacion docente"></a></th>
+                <th scope="col" class="inst" ><a href="https://ens9001-infd.mendoza.edu.ar/sitio/"><img src="/images/iesdyt.png" alt="logo instituto de formacion docente"></a></th>
                 <th scope="col" class="descripcion"><h4> IES 9001 San Martín </h4>
                     <p class="subtitulos"> Profesorado de Inglés en EGB3 y Polimodal  </p>
                     <p class="pequeño"> Año de egreso: 2019 </p></th>
@@ -86,7 +83,7 @@
         </thead>
         <tbody>
             <tr class="text-center">
-                <th scope="row"  ><a href="https://agenciadeaprendizaje.bue.edu.ar/codo-a-codo/"><img src="/images/codo a codo.png" alt="Logo codo a codo"></a></th>
+                <th scope="row" class="codo" ><a href="https://agenciadeaprendizaje.bue.edu.ar/codo-a-codo/"><img src="/images/codo a codo.png" alt="Logo codo a codo"></a></th>
                 <td class="descripcion"><h4> Codo a Codo </h4>
                     <p class="subtitulos"> Desarrollo Full Stack Python </p>
                     <p class="pequeño"> Año de egreso: 2022 </p></td>

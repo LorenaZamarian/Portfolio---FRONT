@@ -1,17 +1,37 @@
+
+
 nav{
-    background-color:black;
+    background-color: black;
+    display:inline-block;
+    width: 100vw;
     color: white;
-    text-align: center;
-    min-height: 50%;
+    position:fixed;
+    z-index: 1;
+    margin-top: 0;
+}
+
+.arg{
+    margin-left: 1vw;
+    margin-bottom: 1vh;
+}
+
+.nombre{
+    margin-left: 2vw;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.ico{
+    margin-left:59vw;
+    font-size:xx-large;
+    
 }
 
 i{
     color: white;
-    font-size: 3vw;
 }
-
 .card{
-    margin: 10px 5px 10px;
+    margin: 0px 5px 10px;
 }
 
 .tabla{
@@ -33,6 +53,7 @@ i{
 
 .pequeño{
     color: grey;
+    font-weight: bold;
 }
 
 .subtitulos{
@@ -52,12 +73,68 @@ i{
 table{
     table-layout: auto;
 }
-#educacion{
-    width: fit-content;
-   
+
+.inst img{
+    margin-bottom: 6%;
 }
 
-    
+
+    @media screen and (max-width:640px) { 
+        nav{
+            background-color: black;
+            display:inline-flexbox;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            width: 100vw;
+            color: white;
+            position: fixed;
+        }
+        
+        .arg img{
+            width: 15%;
+            margin-top: 1%;
+        }
+        
+        .nombre{
+            font-size: 90%;
+            font-weight: bold;
+        }
+        
+        .ico{
+            display: inline-flexbox;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            margin-left:35%;
+            font-size:medium;
+                     
+        }
+        
+        i{
+            color: white;
+        }
+
+        .tabla{
+            max-width:50vw;
+            background-color: white;
+            text-align: center;
+        }
+        #perfil img{
+            border-radius: 200px;
+            max-width: 100%;
+            height: auto;
+            margin-top: -70px;
+        }
+
+        .codo img{
+            padding-top: 5%;
+            width: 100%;
+        }
+       
+        .inst img{
+            margin-bottom: 35%;
+            width: 100%;
+        }
+    }
 
 
 
