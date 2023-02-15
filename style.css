@@ -1,54 +1,32 @@
-
-
-nav{
-    background-color: black;
-    display:inline-block;
-    width: 100vw;
-    color: white;
-    position:fixed;
-    z-index: 1;
-    margin-top: 0;
-}
-
-.arg{
-    margin-left: 1vw;
-    margin-bottom: 1vh;
-}
-
-.nombre{
-    margin-left: 2vw;
-    font-size: larger;
-    font-weight: bold;
-}
-
-.ico{
-    margin-left:59vw;
-    font-size:xx-large;
-    
-}
-
 i{
-    color: white;
-}
-.card{
-    margin: 0px 5px 10px;
+    color: #ffffff;
+    font-size: x-large;
 }
 
-.tabla{
-    max-width:25vw;
-    background-color: white;
-    text-align: center;
+#nombre{
+    margin-left: 5.5em;
 }
-#perfil img{
-    border-radius: 200px;
-    max-width: 70%;
+
+#iconos{
+    margin-right: 1em;
+}
+
+#perfil{
+   margin-top: -10em;
+   padding-left: 1em;
+   text-align: center;
+}
+
+.edu{
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
     height: auto;
-    margin-top: -150px;
-    
 }
 
-.titulos{
-    padding-left: 25px;
+.card{
+    padding-left: 1em;
+    margin: 0.5em;
 }
 
 .pequeño{
@@ -60,81 +38,11 @@ i{
     font-weight: bold;
 }
 
-.barras p{
-    text-align: center;
-}
-
 .barras{
-    margin-left: 100px;
-    margin-right: 100px;
-    margin-bottom: 25px;
-}
-
-table{
-    table-layout: auto;
-}
-
-.inst img{
-    margin-bottom: 6%;
+    padding: 2em;
 }
 
 
-    @media screen and (max-width:640px) { 
-        nav{
-            background-color: black;
-            display:inline-flexbox;
-            flex-direction: row;
-            flex-wrap: nowrap;
-            width: 100vw;
-            color: white;
-            position: fixed;
-        }
-        
-        .arg img{
-            width: 15%;
-            margin-top: 1%;
-        }
-        
-        .nombre{
-            font-size: 90%;
-            font-weight: bold;
-        }
-        
-        .ico{
-            display: inline-flexbox;
-            flex-direction: row;
-            flex-wrap: nowrap;
-            margin-left:35%;
-            font-size:medium;
-                     
-        }
-        
-        i{
-            color: white;
-        }
-
-        .tabla{
-            max-width:50vw;
-            background-color: white;
-            text-align: center;
-        }
-        #perfil img{
-            border-radius: 200px;
-            max-width: 100%;
-            height: auto;
-            margin-top: -70px;
-        }
-
-        .codo img{
-            padding-top: 5%;
-            width: 100%;
-        }
-       
-        .inst img{
-            margin-bottom: 35%;
-            width: 100%;
-        }
-    }
 
 
 

@@ -16,83 +16,83 @@
     <title>Portfolio</title>
 </head>
 
-<body>
-    <nav>
-        <div class="redes">
-            <a href="https://argentinaprograma.inti.gob.ar/" class="arg"><img class="arg" src="/images/arg programa.jpg" alt="Logo argentina programa"></a>
-            <span class="nombre">Lorena Zamarian</span>
-            <span class="ico">
-                <a href="https://www.facebook.com/lore.zama/"><i class="fa-brands fa-facebook" ></i></a>
-                <a href="https://www.instagram.com/lorezamas/"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://github.com/LorenaZamarian"><i class="fa-brands fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/lorena-zamarian-aa862b1b3/"><i class="fa-brands fa-linkedin"></i></a>
-            </span>
+
+    <nav class="container-flex navbar" style="background-color: #000000; color: #ffffff; position:relative">
+        <div class="container-fluid" id="navbar">
+          <a class="navbar-brand" href="https://argentinaprograma.inti.gob.ar/">
+            <img src="/images/arg programa.jpg" alt="Logo" height="35" class="d-inline-block align-text-top">
+          </a>
+            <span class= "position-absolute start-0" style="font-size: x-large;" id="nombre">Lorena Zamarian</span> 
+            <div class="position-absolute end-0" id="iconos">
+            <a href="https://www.facebook.com/lore.zama/"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/lorezamas/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://github.com/LorenaZamarian"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/lorena-zamarian-aa862b1b3/"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
         </div>
     </nav>
-   
-    
-    <div class="card">
+<body>
+
+    <!--Primer card-->
+    <div class="card container-fluid" style="border: red 2px solid;">
         <div class="banner">
-            <img src="/images/lenguaje-programacion.jpg" class="card-img-top" alt="imagen ilustrativa con texto en codigo">
+            <img src="/images/lenguaje-programacion.jpg" class="card-img-top"  alt="imagen ilustrativa con texto en codigo">
         </div>
+
+        <section id="perfil" class="align-items-center container-relative" style="border: red 2px solid;">
+            <div class="col-md-6">
+                <div class="col-md-6" style="width: 15em;">
+                    <a class= foto-perfil href="#">
+                        <img src="/images/perfil2.jpeg" class= "img-fluid rounded-circle " style="max-width:100%; height:auto" alt="foto perfil persona">
+                    </a>
+                </div>
+            </div>
+
+                <div class="col-md-6" style="border: red 2px solid;">
+                    <h3 class="card-title">Lorena Zamarian</h3>
+                    <p class="card-text">Full Stack Developer Jr</p>
+                    <p class="card-text">Profesora de Inglés</p>
+                    <p class="card-text">Mendoza, Argentina</p>
+                </div>
+        </section>
+            
     
-      <div class="tabla">
-        <table class="table-sm" class="fotoperfil">
-            <thead>
-                <tr>
-                   <th scope="col" id="perfil"><img src="/images/perfil2.jpeg" class="img-fluid" max-widht="100%" height="0%"  alt="foto perfil persona"></th>     
-                </tr>
-            </thead>
-
-            <tbody>
-                <tr>
-                    <th scope="row"><h3 class="card-title">Lorena Zamarian</h3></th>
-                </tr>
-                <tr>
-                    <th scope="row"><p class="card-text">Full Stack Developer Jr</p></th>
-                </tr>
-                <tr>
-                    <th scope="row"><p class="card-text">Profesora de Inglés</p></th>
-                </tr>
-                <tr>
-                    <th scope="row"><p class="card-text">Mendoza, Argentina</p></th>
-                </tr>     
-            </tbody>
-        </table>
-      </div>
-
     </div>
     <!--segunda card-->
     <div class="card">
         <h3 class="titulos"> Acerca de </h3>
-        <p style="padding-left: 15px;">Profesora de Inglés, inicializandome en el mundo de la programación con conocimientos en html, css, javascript y python, entre otras</p>
+        <p>Profesora de Inglés, inicializandome en el mundo de la programación con conocimientos en html, css, javascript y python, entre otras</p>
     </div>
 
-
-<div class="card">
-    <h3 class="titulos"> Educación </h3>
+    <!--Tercer card-->
     
-    <table class="table table-borderless" >
-        <thead>
-             <tr class="text-center">
-                <th scope="col" class="inst" ><a href="https://ens9001-infd.mendoza.edu.ar/sitio/"><img src="/images/iesdyt.png" alt="logo instituto de formacion docente"></a></th>
-                <th scope="col" class="descripcion"><h4> IES 9001 San Martín </h4>
-                    <p class="subtitulos"> Profesorado de Inglés en EGB3 y Polimodal  </p>
-                    <p class="pequeño"> Año de egreso: 2019 </p></th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr class="text-center">
-                <th scope="row" class="codo" ><a href="https://agenciadeaprendizaje.bue.edu.ar/codo-a-codo/"><img src="/images/codo a codo.png" alt="Logo codo a codo"></a></th>
-                <td class="descripcion"><h4> Codo a Codo </h4>
-                    <p class="subtitulos"> Desarrollo Full Stack Python </p>
-                    <p class="pequeño"> Año de egreso: 2022 </p></td>
-            </tr>
-        </tbody>
-
-    </table>
+    <div class="card position-relative">
+        <h3 class="titulos"> Educación </h3>
     
-  </div>
+        <table class="table table-borderless"  >
+             <thead>
+                <tr class="edu">
+                <th scope="col" ><a href="https://ens9001-infd.mendoza.edu.ar/sitio/"><img src="/images/iesdyt.png" class="img-fluid" style="max-width: 100%; height: auto;" alt="logo instituto de formacion docente"></a></th>
+                    <th scope="col" class="descripcion" style="margin-left: 5em;"><h4> IES 9001 San Martín </h4>
+                        <p class="subtitulos"> Profesorado de Inglés en EGB3 y Polimodal  </p>
+                        <p class="pequeño"> Año de egreso: 2019 </p>
+                    </th>
+                </tr>
+            </thead>
+        
+            <tbody>
+                <tr class="edu">
+                    <th scope="row" class="codo" ><a href="https://agenciadeaprendizaje.bue.edu.ar/codo-a-codo/"><img src="/images/codo a codo.png" class="img-fluid" style="max-width: 100%; height: auto;"  alt="Logo codo a codo"></a></th>
+                    <td class="descripcion"  style="margin-left:3em;"><h4> Codo a Codo </h4>
+                        <p class="subtitulos"> Desarrollo Full Stack Python </p>
+                        <p class="pequeño"> Año de egreso: 2022 </p>
+                    </td>
+                </tr>
+            </tbody>
+
+        </table>
+    
+    </div>
     
     <!--cuarta card--> 
 
@@ -103,7 +103,7 @@
     <div class="barras">
         <p>Resolución de problemas</p>
         <div class="progress" role="progressbar" aria-label="Default striped example" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
-           <div class="progress-bar progress-bar-striped" style="width: 90%"></div>
+           <div class="progress-bar progress-bar-striped " style="width: 90%"></div>
         </div>
         <p>Comunicación - Expresión escrita</p>
         <div class="progress" role="progressbar" aria-label="Success striped example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
