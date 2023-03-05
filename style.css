@@ -1,20 +1,24 @@
-i{
+/*
+#perfil{
+    margin-top: -10em;
+    padding-left: 1em;
+    text-align: center;
+ }
+*/
+
+nav{
+    background-color: #000000;
     color: #ffffff;
+    align-items: center;
+    display: inline;
+}
+
+#name{
     font-size: x-large;
 }
 
-#nombre{
-    margin-left: 5.5em;
-}
-
-#iconos{
-    margin-right: 1em;
-}
-
-#perfil{
-   margin-top: -10em;
-   padding-left: 1em;
-   text-align: center;
+#logos{
+    font-size: x-large;
 }
 
 .edu{
@@ -42,7 +46,28 @@ i{
     padding: 2em;
 }
 
+/*Breakpoints*/
 
+@media only screen and (max-width: 600px){
+    #name{
+        font-size: large;
+    }
 
+    #logos{
+        font-size: large;       
+    }
+
+}
+
+@media only screen and (max-width: 490px){
+    #name{
+        font-size: small;
+    }
+
+    #logos{
+        font-size: small;
+    }
+
+}
 
 

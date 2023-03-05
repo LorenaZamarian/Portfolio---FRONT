@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    
     <link rel="stylesheet" href="/assets/fontawesome-free-6.2.1-web/css/fontawesome.css">
     <link rel="stylesheet" href="/assets/fontawesome-free-6.2.1-web/css/brands.css">
+    <link rel="stylesheet" href="/assets/fontawesome-free-6.2.1-web/css/solid.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Poppins:ital,wght@0,100;0,200;0,400;1,200;1,400&display=swap" rel="stylesheet">
@@ -16,34 +17,55 @@
     <title>Portfolio</title>
 </head>
 
-
-    <nav class="container-flex navbar" style="background-color: #000000; color: #ffffff; position:relative">
-        <div class="container-fluid" id="navbar">
-          <a class="navbar-brand" href="https://argentinaprograma.inti.gob.ar/">
-            <img src="/images/arg programa.jpg" alt="Logo" height="35" class="d-inline-block align-text-top">
-          </a>
-            <span class= "position-absolute start-0" style="font-size: x-large;" id="nombre">Lorena Zamarian</span> 
-            <div class="position-absolute end-0" id="iconos">
-            <a href="https://www.facebook.com/lore.zama/"><i class="fa-brands fa-facebook"></i></a>
-            <a href="https://www.instagram.com/lorezamas/"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://github.com/LorenaZamarian"><i class="fa-brands fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/lorena-zamarian-aa862b1b3/"><i class="fa-brands fa-linkedin"></i></a>
-            </div>
-        </div>
-    </nav>
 <body>
 
-    <!--Primer card-->
+<!--Navbar-->
+
+<nav class="navbar navbar-expand-lg container-fluid">
+    <div class="row align-items-center" style= "min-width: 100%;">
+        <div class="col col-md-auto" >
+            <div class="container-fluid">
+                <a class="navbar-brand" href="https://argentinaprograma.inti.gob.ar/" ><img class="img-fluid" src="/images/arg programa.jpg"></a>
+            </div>
+        </div>
+        
+        <div class="col col-md-auto align-items-center container-fluid" id="name" style="margin-left: 0%;">
+            <span>Lorena Zamarian</span>
+        </div>
+
+        <div class="col col-md-auto align-items-center" id="logos">           
+            <ul class="list-group list-group-horizontal">
+                <li class="list-group-item" style="background-color: #000000; "><a href="https://github.com/LorenaZamarian"><i class="fa-brands fa-github" style="color: #ffffff;"></i></a></li>
+                <li class="list-group-item" style="background-color: #000000; "><a href="https://www.linkedin.com/in/lorena-zamarian-aa862b1b3/"><i class="fa-brands fa-linkedin" style="color: #ffffff;"></i></a></li>
+                <li class="list-group-item" style="background-color: #000000; " id="botonLog">
+                    <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#logInModal">
+                        <i class="fa-solid fa-user"></i>
+                    </button>
+                </li>
+                <li class="list-group-item" style="background-color: #000000; " id="botonLogOut">
+                    <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#logOutModal">
+                        <i class="fa-solid fa-unlock"></i>
+                    </button>
+                </li>
+            </ul>
+
+        </div>
+          
+    </div>
+    
+  </nav>
+
+    <!--Primer card perfil-->
     <div class="card container-fluid" style="border: red 2px solid;">
         <div class="banner">
             <img src="/images/lenguaje-programacion.jpg" class="card-img-top"  alt="imagen ilustrativa con texto en codigo">
         </div>
 
-        <section id="perfil" class="align-items-center container-relative" style="border: red 2px solid;">
-            <div class="col-md-6">
-                <div class="col-md-6" style="width: 15em;">
-                    <a class= foto-perfil href="#">
-                        <img src="/images/perfil2.jpeg" class= "img-fluid rounded-circle " style="max-width:100%; height:auto" alt="foto perfil persona">
+        <section id="perfil" class="align-items-center container-fluid" style="border: red 2px solid;">
+            <div class="container-fluid ">
+                <div class="container-fluid" style="width: 15em;">
+                    <a class="container-fluid" href="#">
+                        <img src="/images/perfil2.jpeg" class= "img-fluid rounded-circle " alt="foto perfil persona">
                     </a>
                 </div>
             </div>
@@ -58,13 +80,14 @@
             
     
     </div>
-    <!--segunda card-->
+
+    <!--segunda card Acerca de-->
     <div class="card">
         <h3 class="titulos"> Acerca de </h3>
         <p>Profesora de Inglés, inicializandome en el mundo de la programación con conocimientos en html, css, javascript y python, entre otras</p>
     </div>
 
-    <!--Tercer card-->
+    <!--Tercer card Educacion-->
     
     <div class="card position-relative">
         <h3 class="titulos"> Educación </h3>
@@ -94,48 +117,89 @@
     
     </div>
     
-    <!--cuarta card--> 
+    <!--cuarta card Hard and soft skills--> 
 
     <div class="card">
         <h3 class="titulos"> Hard Skills & Soft Skills </h3>
        
     <!--progress bars--> 
     <div class="barras">
-        <p>Resolución de problemas</p>
+        
         <div class="progress" role="progressbar" aria-label="Default striped example" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
            <div class="progress-bar progress-bar-striped " style="width: 90%"></div>
         </div>
-        <p>Comunicación - Expresión escrita</p>
+        <p>Resolución de problemas</p>
+        
         <div class="progress" role="progressbar" aria-label="Success striped example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
             <div class="progress-bar progress-bar-striped bg-success" style="width: 100%"></div>
         </div>
-        <p>HTML</p>
+        <p>Comunicación - Expresión escrita</p>
+        
         <div class="progress" role="progressbar" aria-label="Info striped example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
             <div class="progress-bar progress-bar-striped bg-info" style="width: 80%"></div>
         </div>
-        <p>CSS</p>
+        <p>HTML</p>
+        
         <div class="progress" role="progressbar" aria-label="Warning striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
             <div class="progress-bar progress-bar-striped bg-warning" style="width: 75%"></div>
         </div>
-        <p>JavaScript</p>
+        <p>CSS</p>
+        
         <div class="progress" role="progressbar" aria-label="Danger striped example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
             <div class="progress-bar progress-bar-striped bg-danger" style="width: 25%"></div>
         </div>
-        <p>Bootstrap</p>
+        <p>JavaScript</p>
+        
         <div class="progress" role="progressbar" aria-label="text-warning-emphasis" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
             <div class="progress-bar progress-bar-striped bg-dark" style="width: 75%"></div>
         </div>
-        <p>Git y Github</p>
+        <p>Bootstrap</p>
+        
         <div class="progress" role="progressbar" aria-label="Danger striped example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
             <div class="progress-bar progress-bar-striped" style="width: 50%" ></div>
         </div>
-        <p>Python</p>
+        <p>Git y Github</p>
+        
         <div class="progress" role="progressbar" aria-label="Danger striped example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
             <div class="progress-bar progress-bar-striped bg-danger" style="width: 60%"></div>
         </div>
+        <p>Python</p>
     </div>    
 
     </div>
-    
+     <!-- Modal log in -->
+    s<div class="modal fade" id="logInModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Log in</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+        
+                <div class="modal-body">
+            
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Direccion de mail</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Salir</button>
+                            <button type="submit" class="btn btn-primary">Ingresar</button>    
+                        </div>
+                    </form>
+                
+                </div>
+        
+            </div>
+        </div>
+    </div>   
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html>
