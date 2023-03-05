@@ -1,11 +1,4 @@
-/*
-#perfil{
-    margin-top: -10em;
-    padding-left: 1em;
-    text-align: center;
- }
-*/
-
+/*estilos navbar*/
 nav{
     background-color: #000000;
     color: #ffffff;
@@ -21,13 +14,44 @@ nav{
     font-size: x-large;
 }
 
-.edu{
-    display: flex;
-    align-items: center;
-    flex-wrap: nowrap;
-    height: auto;
+
+/*Estilos perfil*/
+#banner{
+    width: 103%; 
+    margin-left: -2.1%;
 }
 
+#perfil{
+    margin-top: -10em;
+    width: 50%;
+    margin-left: 0em;
+    display: flex;
+    flex-direction: column;
+    white-space: nowrap;
+    overflow: hidden;
+    
+}
+ 
+#fotoPerfil{
+    max-width: 50%;
+}
+
+#textoPerfil{
+    text-align: center;
+    padding-bottom: 5%;
+}
+
+#textoPerfil h3{
+    font-size: 3vw;
+    height: 5vh;
+}
+
+#textoPerfil p{
+    font-size: 2vw;
+    height:2vh;
+}
+
+/*Estilo cards*/
 .card{
     padding-left: 1em;
     margin: 0.5em;
@@ -42,13 +66,40 @@ nav{
     font-weight: bold;
 }
 
+/*Estilos educacion*/
+.edu{
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    height: auto;
+}
+
+
 .barras{
     padding: 2em;
 }
 
 /*Breakpoints*/
 
+@media only screen and (max-width: 800px){
+    
+    #banner{
+        width: 105%; 
+        margin-left: -3.5%;
+    }
+
+    #perfil{
+        margin-top: -6em;
+    }
+}
+
 @media only screen and (max-width: 600px){
+
+    #banner{
+        width: 107%; 
+        margin-left: -5%;
+    }
+
     #name{
         font-size: large;
     }
@@ -57,9 +108,24 @@ nav{
         font-size: large;       
     }
 
+    #fotoPerfil{
+        max-width: 80%;
+    }
+
+    #textoPerfil h3{
+        font-size: 3vw;
+        height: 3vh;
+    }
+
 }
 
 @media only screen and (max-width: 490px){
+
+    #banner{
+        width: 108%; 
+        margin-left: -5.9%;
+    }
+
     #name{
         font-size: small;
     }
@@ -68,6 +134,29 @@ nav{
         font-size: small;
     }
 
+    #perfil{
+        margin-top: -5em;
+    }
+     
+    #fotoPerfil{
+        max-width: 80%;
+    }
+    
+    #textoPerfil{
+        text-align: center;
+        padding-bottom: 7%;
+    }
+    
+    #textoPerfil h3{
+        font-size: 4vw;
+        height: 3vh;
+        
+    }
+    
+    #textoPerfil p{
+        font-size: 3vw;
+        height:1vh;
+    }
 }
 
 
