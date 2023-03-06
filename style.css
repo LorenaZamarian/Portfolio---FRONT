@@ -51,6 +51,22 @@ nav{
     height:2vh;
 }
 
+#triggerPerfil{
+    max-width:fit-content;
+    margin: 0.5vw;
+    display: block;
+    flex: 1 1 150px;
+}
+
+.triggers{
+    max-width: fit-content;
+    margin-left: 50%;
+    margin-top: 26%;
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+}
+
 /*Estilo cards*/
 .card{
     padding-left: 1em;
@@ -91,6 +107,12 @@ nav{
     #perfil{
         margin-top: -6em;
     }
+
+    .lapiz{
+        font-size: small;
+        max-width: fit-content;
+    }
+   
 }
 
 @media only screen and (max-width: 600px){
@@ -115,6 +137,21 @@ nav{
     #textoPerfil h3{
         font-size: 3vw;
         height: 3vh;
+    }
+
+    #botonLog{
+        font-size:small;
+        width:auto;
+    }
+
+    #botonLogOut{
+        font-size:small;
+        width:auto;
+    }
+
+    .lapiz{
+        font-size: x-small;
+        max-width: fit-content;
     }
 
 }
@@ -157,6 +194,30 @@ nav{
         font-size: 3vw;
         height:1vh;
     }
+
+    #botonLog{
+        font-size:xx-small;
+        width:auto;
+    }
+
+    #botonLogOut{
+        font-size:xx-small;
+        width:auto;
+    }
+
+    #triggerPerfil{
+        max-width:fit-content;
+        margin: 0.5vw;
+        display: block;
+        flex: 1 1 150px;
+        font-size:x-small ;
+    }
+
+    .lapiz{
+        font-size: xx-small;
+        max-width: fit-content;
+    }
+        
 }
 
 
